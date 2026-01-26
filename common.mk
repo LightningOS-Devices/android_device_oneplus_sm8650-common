@@ -335,6 +335,10 @@ PRODUCT_COPY_FILES += \
 
 $(call soong_config_set,qtipower,mode_ext_lib,power-ext-oplus)
 
+# Performance
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/perf/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
+
 # QSPA
 PRODUCT_PACKAGES += \
     qspa_vendor.rc \
